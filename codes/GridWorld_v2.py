@@ -1,3 +1,4 @@
+import random
 import numpy as np
 #跟v1版本的区别主要是两点，v1是针对deteministic的策略的，v2是针对stochastic的策略的，
 #具体来说的话就是，v2版本支持在同一个state概率选择若干个动作
