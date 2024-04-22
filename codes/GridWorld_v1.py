@@ -80,7 +80,7 @@ class GridWorld_v1(object):
         tmpy = nowy + actionList[action][1]
         # print(tmpx,tmpy)
         if(tmpx<0 or tmpy<0 or tmpx>=self.rows or tmpy>=self.columns):
-            return -1,nowState
+            return -1,nowState #如果出界，返回-1
         return self.scoreMap[tmpx][tmpy],self.stateMap[tmpx][tmpy]
 
     def showPolicy(self, policy):
